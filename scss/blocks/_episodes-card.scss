@@ -1,0 +1,139 @@
+.card-episodes {
+
+    &__border {	
+		@media (width >= rem(768)) {
+			display: flex;
+			column-gap: fluid-mid(53,40);
+			padding: fluid-mid(40,20);
+			background-color: var(--color-bg-cards);
+			border-radius: fluid-mid_1(32,22);
+
+			& > div:nth-child(1) {order: 2;}
+			& > div:nth-child(2) {order: 1;}			
+		}
+    }
+
+	&__image {
+		width: 100%;
+		left: 0;
+		@media (width >= rem(768)) {width: auto;}
+		& img {
+			filter: brightness(0.7);
+			@media (width >= rem(768)) {filter: brightness(1.0);}
+			@media (width >= rem(1440)) {width: auto;}
+		}
+	}
+	
+    &__text {
+		position: absolute;
+		z-index: 1;
+        padding-block: fluid-mobile(40,20);
+        @media (width >= rem(768)) {
+			position: static;
+            width: 80%;
+            padding: 0;
+			padding-top: fluid-mid(8,4);
+        }
+    }
+
+    &__container {
+		padding-inline: rem(15);
+		display: flex;
+		flex-direction: column;
+		@media (width >= rem(375)) {padding-inline: rem(40);}
+		@media (width >= rem(768)) {
+			height: 100%;
+			justify-content: space-between;
+			padding: 0;
+			text-align: left;
+		}
+	}
+
+    &__top-title {
+		align-self: flex-start;
+		margin: 0 auto;
+		margin-bottom: fluid-mobile(40,20);
+		padding-block: 0;
+		padding-inline: rem(12);
+		background-color: var(--color-bg-primary);
+		@media (width >= rem(768)) {
+			padding-inline: fluid-mid(15,12);
+			margin: 0;
+		}
+		@media (width >= rem(1440)) {
+			margin-bottom: rem(28);
+			line-height: rem(27);
+		}
+	}
+
+    &__text-blue {
+		height: rem(24);
+		margin-inline: auto;
+		margin-top: 0;
+		margin-bottom: fluid-mobile(132,28);
+		padding-block: 0;
+		padding-inline: rem(12);
+		line-height: rem(24);
+		background-color: var(--color-bg-primary);
+		@media (width >= rem(768)) {
+			height: fluid-mid(27,24);		
+			margin: 0;
+			padding: 0;
+			background-color: transparent;
+			border-radius: 0;
+		}
+
+		& span {
+			display: inline-block;
+			margin-left: rem(3);
+			font-size: rem(16);
+			@media (width >= rem(768)) {
+				height: fluid-mid(27,24);
+				margin-left: fluid-mid(5,4);
+				font-size: fluid-mid(19,17);
+			}
+		}
+	}
+
+	&__header {
+		margin-bottom: fluid-mobile(220,69);
+		@media (width >= rem(768)) {
+			margin-bottom: 0;
+			width: 100%;
+		}
+	}
+
+    &__title {
+		padding-inline: fluid-mobile(80,6);
+		margin-bottom: fluid-mobile(80,28);		
+		font-size: fluid-mobile(40,18);
+		line-height: fluid-full(70,22);
+		letter-spacing: fluid-full(2.56,0.816);
+		-webkit-line-clamp: 2;
+		@media (width >= rem(768)) {
+			padding-inline: 0;
+			margin: 0;
+			margin-bottom: rem(8);
+			font-size: fluid-mid(57,28);
+		}
+		@media (width >= rem(1290)) {margin-bottom: 0;}
+		@media (width >= rem(1440)) {
+			max-width: rem(619);
+			margin-bottom: rem(28);
+			line-height: rem(70);
+		}
+	}
+
+	&__subtitle {
+		-webkit-line-clamp: 2;
+		@media (width >= rem(768)) {margin: 0;}												
+	}
+	
+	&__button {
+		margin: 0 auto;
+		@media (width >= rem(768)) {
+			margin: 0;
+			align-self: flex-start;
+		}
+	}
+}
