@@ -981,9 +981,9 @@ p:not([class]):not(:last-child) {
   width: 100%;
   background-color: rgba(6, 33, 55, 0.9);
   display: flex;
-  z-index: 5;
   overflow: auto;
   transition: all 0.3s ease 0s;
+  z-index: 5;
 }
 .menu__body._active {
   left: 0;
