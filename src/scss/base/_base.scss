@@ -28,4 +28,4 @@ img {
 
 .main {flex-grow: 1;}
 
-p:not([class]):not(:last-child) {margin-bottom: 24px;}
+p:not([class]):not(:last-child) {margin-bottom: to-rem(24);}

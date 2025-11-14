@@ -1,15 +1,14 @@
 .soc1als-2 {
 	&__list {
 		display: flex;
-		column-gap: rem(15);
-		@media (width >= rem(768)) {column-gap: rem(17);}
+		column-gap: to-rem(15);
+		@media (min-width: to-rem(768)) {column-gap: to-rem(17);}
 	}
 	
 	&__link {
 		display: inline-flex;
 		width: var(--icon-soc1als-2-width);
 		font-size: 0;
-		@media (width: rem(768)) {width: rem(19);}
+		@media (min-width: to-rem(768)) {width: to-rem(19);}
 	}
-
 }

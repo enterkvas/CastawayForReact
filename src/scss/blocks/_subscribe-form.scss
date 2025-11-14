@@ -1,13 +1,13 @@
 .form-subscribe {
 	position: relative;
 	flex-direction: column;
-	row-gap: rem(20);
-	@media (width >= rem(768)) {
-		row-gap: rem(16);
+	row-gap: to-rem(20);
+	@media (min-width: to-rem(768)) {
+		row-gap: to-rem(16);
 		padding: 0;
 	}
 
-	@media (width >= rem(1440)) {row-gap: rem(20);}
+	@media (min-width: to-rem(1440)) {row-gap: to-rem(20);}
 
 	&::after {
 		position: absolute;
@@ -30,26 +30,26 @@
 	&__form {
 		position: relative;
 		width: fluid-mobile(480,260);
-		padding: rem(12) rem(10);
+		padding: to-rem(12) to-rem(10);
 		font-size: fluid-full(24,14);
 		line-height: fluid-full(29,18);
 		border-radius: fluid-full(6,4);
 		color: var(--color-text-primary);
 		background-color: var(--color-bg-primary);
-		@media (width: rem(768)) {
-			font-size: rem(16);
-			line-height: rem(20);
-			border-radius: rem(5);
+		@media (min-width: to-rem(768)) {
+			font-size: to-rem(16);
+			line-height: to-rem(20);
+			border-radius: to-rem(5);
 		}
-		@media (width >= rem(768)) {
+		@media (min-width: to-rem(768)) {
 			width: 100%;
-			padding: rem(16) rem(12);
+			padding: to-rem(16) to-rem(12);
 		}
-		@media (width >= rem(992)) {padding: rem(22) rem(10) rem(22) rem(18);}
-		@media (width >= rem(1200)) {padding: rem(26) rem(10) rem(26) rem(20);}
-		@media (width >= rem(1440)) {
-			width: rem(522);
-			height: rem(82);
+		@media (min-width: to-rem(992)) {padding: to-rem(22) to-rem(10) to-rem(22) to-rem(18);}
+		@media (min-width: to-rem(1200)) {padding: to-rem(26) to-rem(10) to-rem(26) to-rem(20);}
+		@media (min-width: to-rem(1440)) {
+			width: to-rem(522);
+			height: to-rem(82);
 			margin: 0;
 		}		
 		&:focus {box-shadow: 0px 0px 10px 2px var(--color-text-primary);}
@@ -64,11 +64,11 @@
 		padding: 6px 8px;
 		font-size: fluid-full(16,14);
 		border-radius: 2px;
-		@media (width >= rem(768)) {
+		@media (min-width: to-rem(768)) {
 			padding: 8px 10px;
 			letter-spacing: 1px;
 		}
-		@media (width >= rem(1440)) {
+		@media (min-width: to-rem(1440)) {
 			padding: 10px 15px;
 			border-radius: 4px;
 			letter-spacing: 2px;
@@ -77,7 +77,7 @@
 	
 	&__button {
 		margin: 0 auto;
-		@media (width >= rem(768)) {
+		@media (min-width: to-rem(768)) {
 			display: flex;
 			align-self: flex-start;
 			margin: 0;

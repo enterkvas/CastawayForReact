@@ -1,25 +1,25 @@
 @use 'sass:math';
 
 // Function for translation px in rem
-@function rem($pixel) {
-    @if math.is-unitless($pixel) {@return math.div($pixel, 16) + rem;}
-}
+// @function rem($pixel) {
+//     @if math.is-unitless($pixel) {@return math.div($pixel, 16) + rem;}
+// }
 
 // General function for creating fluid dimension
 @function fluid-size($max, $min, $maxViewportWidth, $minViewportWidth) {
-    $maxSize: math.div($max, 16);
-    $minSize: math.div($min, 16);
-    $maxWidth: math.div($maxViewportWidth, 16);
-    $minWidth: math.div($minViewportWidth, 16);
+  $maxSize: math.div($max, 16);
+  $minSize: math.div($min, 16);
+  $maxWidth: math.div($maxViewportWidth, 16);
+  $minWidth: math.div($minViewportWidth, 16);
 
-    $slope: math.div(($maxSize - $minSize), ($maxWidth - $minWidth));
-    $yAxisIntersection: -$minWidth * $slope + $minSize;
+  $slope: math.div(($maxSize - $minSize), ($maxWidth - $minWidth));
+  $yAxisIntersection: -$minWidth * $slope + $minSize;
 
-    @return clamp(
-        #{$minSize * 1rem},
-        #{$yAxisIntersection * 1rem} + #{$slope * 100vw},
-        #{$maxSize * 1rem}
-    );
+  @return clamp(
+      #{$minSize * 1rem},
+      #{$yAxisIntersection * 1rem} + #{$slope * 100vw},
+      #{$maxSize * 1rem}
+  );
 }
 
 // Full Viewport function
@@ -42,3 +42,11 @@
 
 // Function for Mid_3 Viewport
 @function fluid-mid_3($max, $min) {@return fluid-size($max, $min, 1439, 1024);}
+
+@function to-rem($px) {
+  @if type-of($px) != 'number' {
+    @error '❌ to-rem() expects a number, got #{type-of($px)} instead.';
+  }
+
+  @return ($px / 16) * 1rem;
+}

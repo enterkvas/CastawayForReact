@@ -1,19 +1,19 @@
 .container {
-	max-width: rem(1440);
+	max-width: to-rem(1440);
 	margin-inline: auto;
 }
 
 .visually-hidden {
 	position: absolute !important;
-    width: 1rem !important;
-    height: 1rem !important;
-    margin: -1rem !important;
-    border: 0 !important;
-    padding: 0 !important;
-    white-space: nowrap !important;
-    clip-path: inset(100%) !important;
-    clip: rect(0 0 0 0) !important;
-    overflow: hidden !important;
+	width: 1rem !important;
+	height: 1rem !important;
+	margin: -1rem !important;
+	border: 0 !important;
+	padding: 0 !important;
+	white-space: nowrap !important;
+	clip-path: inset(100%) !important;
+	clip: rect(0 0 0 0) !important;
+	overflow: hidden !important;
 }
 
 .align-center {
@@ -24,12 +24,11 @@
 .subtitle {
 	font-size: fluid-full(22,15);
 	line-height: fluid-full(33,22);
-	@media (width: rem(768)) {
-		font-size: rem(18);
-		line-height: rem(27);
+	@media (width: to-rem(768)) {
+		font-size: to-rem(18);
+		line-height: to-rem(27);
 	}
-	@media (width >= rem(768)) {color: var(--color-text-muted);}
-
+	@media (width: to-rem(768)) {color: var(--color-text-muted);}
 }
 
 .text-blue {
@@ -38,10 +37,10 @@
 }
 
 .text-small {
-	font-size: rem(15);
-	line-height: rem(24);
-	border-radius: rem(4);
-	@media (width >= rem(768)) {
+	font-size: to-rem(15);
+	line-height: to-rem(24);
+	border-radius: to-rem(4);
+	@media (width: to-rem(768)) {
 		font-size: fluid-mid(18,16);
 		line-height: fluid-mid(27,24);
 		border-radius: fluid-mid(6,4);
