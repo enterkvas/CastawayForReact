@@ -1,14 +1,19 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import path from 'path'
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  scss: {
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    },
+  },
+  css: {
     preprocessorOptions: {
-      css: {
-        additionalData: `@use "src/scss/base/functions" as *;`
-      }
-    }
-  }
+      scss: {
+        additionalData: `@use "@/scss/base/functions" as *;`
+      },
+    },
+  },
 })

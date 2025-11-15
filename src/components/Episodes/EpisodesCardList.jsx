@@ -1,6 +1,6 @@
-import episodes1 from '../../assets/images/episodes-img/episodes1.jpg'
-import episodes2 from '../../assets/images/episodes-img/episodes2.jpg'
-import episodes3 from '../../assets/images/episodes-img/episodes3.jpg'
+import episodes1 from '@/assets/images/episodes-img/episodes1.jpg'
+import episodes2 from '@/assets/images/episodes-img/episodes2.jpg'
+import episodes3 from '@/assets/images/episodes-img/episodes3.jpg'
 
 import EpisodesCard from './EpisodesCard'
 
