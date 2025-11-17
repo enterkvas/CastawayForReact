@@ -23,7 +23,7 @@ const episodesData = [
   },
   {
     id: 3,
-    category: 'Equipment',
+    category: 'Gear',
     number: '3',
     title: 'Should you get outboard audio gear?',
     text: 'Is hardware really worth it these days? Some people swear by it — let’s discuss.',

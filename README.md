@@ -10,3 +10,10 @@ Currently, two official plugins are available:
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+======================================================================================================
+
+15.11.25 сб 										Здесь будут мои заметки по проекту
+
+1) после установки react-router-dom промпт для гпт по поводу: <span className="card-episodes__button button text-small">View Episode Details</span> (стоит ли эту бутафорскую кнопку делать компонентом?)
+2) в EpisodesHeader переделать ссылку: a на Link

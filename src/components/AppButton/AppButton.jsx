@@ -1,14 +1,14 @@
 const AppButton = ({
-  label = "View Episode Details",
+  label = "View all episodes",
   href = "#",
-  className = "",
+  className = "episodes__header-link button text-small",
   arialabel,
 }) => {
   return (
     <a 
       href={href} 
       arialabel = {arialabel || label}
-      className={`card-episodes__button button text-small ${className}`}
+      className={`${className}`}
     >
       {label}
     </a>

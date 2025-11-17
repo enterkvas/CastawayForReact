@@ -1,4 +1,3 @@
-import AppButton from "../AppButton/AppButton";
 import EpisodesCardHeader from "./EpisodesCardHeader";
 
 const EpisodesCardBody = ({ category, number, title, text }) => {
@@ -10,7 +9,7 @@ const EpisodesCardBody = ({ category, number, title, text }) => {
           Episode <span>{number}</span>
         </p>
         <EpisodesCardHeader title={title} text={text} />
-        <AppButton />
+        <span className="card-episodes__button button text-small">View Episode Details</span>
       </div>
     </div>
   );

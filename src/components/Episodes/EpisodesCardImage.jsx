@@ -1,6 +1,6 @@
 const EpisodesCardImage = ({ image, title }) => {
 	return (
-		<a className="card-episodes__image">
+		<div className="card-episodes__image">
 			<img
         loading="lazy"
         src={image}
@@ -8,7 +8,7 @@ const EpisodesCardImage = ({ image, title }) => {
         height="432"
         alt={title}
       />
-		</a>
+		</div>
 	);
 };
 

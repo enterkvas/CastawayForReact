@@ -1,4 +1,5 @@
 import EpisodesCardList from "./EpisodesCardList";
+import EpisodesHeader from "./EpisodesHeader";
 
 const Episodes = () => {
   return (
@@ -7,14 +8,8 @@ const Episodes = () => {
       id="episodes"
       aria-labelledby="episodes-title"
     >
-      <header className="episodes__header">
-        <h2 className="episodes__header-title" id="episodes-title">
-          Latest episodes
-        </h2>
-        <a href="#" className="episodes__header-link button text-small">
-          View all episodes
-        </a>
-      </header>
+      <EpisodesHeader />
+      
       <div className="episodes__container">
         <EpisodesCardList />
       </div>
