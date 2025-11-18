@@ -1,10 +1,11 @@
+import styles from "./Episodes.module.scss" 
 import EpisodesCardBody from './EpisodesCardBody'
 import EpisodesCardImage from './EpisodesCardImage'
 
 const EpisodesCard = ({ category, number, title, text, image }) => {
   return (
     <li className="episodes__item">
-      <a href='#' className="episodes__card card-episodes">
+      <a href='#' className={styles.episodesCard}>
         <div className="card-episodes__border">
           <EpisodesCardBody
             category={category}

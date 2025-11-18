@@ -1,10 +1,11 @@
+import styles from "./Episodes.module.scss"
 import EpisodesCardList from "./EpisodesCardList";
 import EpisodesHeader from "./EpisodesHeader";
 
 const Episodes = () => {
   return (
     <section
-      className="page__episodes episodes"
+      className={styles.episodes}
       id="episodes"
       aria-labelledby="episodes-title"
     >

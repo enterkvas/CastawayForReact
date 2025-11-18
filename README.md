@@ -17,3 +17,5 @@ If you are developing a production application, we recommend using TypeScript wi
 
 1) после установки react-router-dom промпт для гпт по поводу: <span className="card-episodes__button button text-small">View Episode Details</span> (стоит ли эту бутафорскую кнопку делать компонентом?)
 2) в EpisodesHeader переделать ссылку: a на Link
+
+17.11.25 пнд		Сделал Episodes.module.scss Не перенес миксины и переменные в этот модуль. Если будут косяки, н.б. учесть.
