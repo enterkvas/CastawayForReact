@@ -1,21 +1,13 @@
-import styles from "./Episodes.module.scss"
-import EpisodesCardList from "./EpisodesCardList";
-import EpisodesHeader from "./EpisodesHeader";
+import clsx from 'clsx';
+import styles from './Episodes.module.scss';
+import EpisodesCardList from './EpisodesCardList';
+import EpisodesHeader from './EpisodesHeader';
 
-const Episodes = () => {
+export default function Episodes() {
   return (
-    <section
-      className={styles.episodes}
-      id="episodes"
-      aria-labelledby="episodes-title"
-    >
+    <section className={clsx(styles.root, styles.pageContainer)}>
       <EpisodesHeader />
-      
-      <div className="episodes__container">
-        <EpisodesCardList />
-      </div>
+      <EpisodesCardList />
     </section>
   );
-};
-
-export default Episodes;
+}

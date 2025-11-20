@@ -1,11 +1,5 @@
 @use 'sass:math';
 
-// Function for translation px in rem
-// @function rem($pixel) {
-//     @if math.is-unitless($pixel) {@return math.div($pixel, 16) + rem;}
-// }
-
-// General function for creating fluid dimension
 @function fluid-size($max, $min, $maxViewportWidth, $minViewportWidth) {
   $maxSize: math.div($max, 16);
   $minSize: math.div($min, 16);

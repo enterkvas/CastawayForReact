@@ -1,9 +1,9 @@
-const AppButton = ({
+export default function AppButton ({
   label = "View all episodes",
   href = "#",
   className = "episodes__header-link button text-small",
-  arialabel,
-}) => {
+  arialabel
+}) {
   return (
     <a 
       href={href} 
@@ -13,6 +13,4 @@ const AppButton = ({
       {label}
     </a>
   );
-};
-
-export default AppButton;
+}

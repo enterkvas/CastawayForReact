@@ -19,3 +19,11 @@ If you are developing a production application, we recommend using TypeScript wi
 2) в EpisodesHeader переделать ссылку: a на Link
 
 17.11.25 пнд		Сделал Episodes.module.scss Не перенес миксины и переменные в этот модуль. Если будут косяки, н.б. учесть.
+
+18.11.25 вт 	EpisodesCard.jsx: подключение стилей: 
+import styles from "./Episodes.module.scss"; ?
+а м.б.: import styles from "./EpisodesCard.module.scss"; ?
+
+Вставляю последний вариант 2 от гпт:
+Episodes.jsx: ?:id="episodes"
+EpisodesHeader.jsx: 1) id="episodes-title" 2) <AppButton />
