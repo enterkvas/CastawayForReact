@@ -1,16 +1,15 @@
-import Logo from "./Logo";
-import MenuHorizontal from "./MenuHorizontal";
+import clsx from 'clsx';
+import Logo from './Logo/Logo';
+import HeaderMenu from './HeaderMenu/HeaderMenu';
+import styles from './Header.module.scss';
 
-
-const Header = () => {
+export default function Header () {
   return (
-    <header className="header">
-      <div className="header__container container align-center">
+    <header className={styles.header}>
+      <div className={clsx(styles.container, styles.alignCenter)}>
         <Logo />
-        <MenuHorizontal />
+        <HeaderMenu />
       </div>
     </header>
   );
-};
-
-export default Header
+}
