@@ -1,0 +1,48 @@
+.button {
+	display: inline-block;
+	padding-block: fluid-full(12,5);
+	padding-inline: fluid-full(18,8);
+	font-weight: 400;
+	color: var(--color-text-primary);
+	background-color: var(--color-accent-blue);
+	@media (width: to-rem(768)) {
+		padding-block: to-rem(8);
+		padding-inline: to-rem(12);
+	}
+	@media (min-width: to-rem(992)) {
+		&:hover {background-image: linear-gradient(to right, var(--color-accent-yellow), var(--color-accent-blue));}		
+	}
+	@media (min-width: to-rem(1440)) {line-height: to-rem(27);}
+}
+
+.buttonSubscribe {
+	padding-block: fluid-mid(12,2);
+	padding-inline: fluid-mid(18,10);	
+	font-size: fluid-full(15,14);
+	font-weight: 700;
+	line-height: to-rem(24);
+	border-radius: fluid-full(6,4);
+	color: var(--color-text-muted);
+	background-color: var(--color-accent-blue);
+	@media (width: to-rem(768)) {
+		padding-block: to-rem(4);
+		font-size: to-rem(14);
+		border-radius: to-rem(5);
+	}
+	@media (min-width: to-rem(768)) {		
+		display: flex;
+		align-self: flex-start;
+	}
+	@media (min-width: to-rem(992)) {
+		&:hover {background-image: linear-gradient(to right, var(--color-accent-yellow), var(--color-accent-blue));}
+		cursor: pointer;		
+	}
+}
+
+.textSmall {
+	font-size: to-rem(15);
+	line-height: fluid-mid(27,24);
+	border-radius: fluid-mid(6,4);
+	@media (width: to-rem(768)) {border-radius: to-rem(5);}	
+	@media (min-width: to-rem(768)) {font-size: fluid-mid(18,16);}
+}

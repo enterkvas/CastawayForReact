@@ -1,56 +1,32 @@
-const Subscribe = () => {
+import clsx from 'clsx';
+import styles from './Subscribe.module.scss';
+import SubscribeForm from './components/SubscribeForm';
+
+export default function Subscribe() {
   return (
     <section
-      className="page__subscribe subscribe"
+      className={clsx(styles.subscribe, styles.pageContainer)}
       aria-labelledby="subscribe-title"
     >
-      <div className="subscribe__container">
-        <div className="subscribe__row">
-          <div className="subscribe__col">
-            <div className="subscribe__text">
-              <div className="subscribe__text-blue text-blue text-small">
+      <div className={styles.container}>
+        <div className={styles.row}>
+          <div className={styles.col}>
+            <div className={styles.text}>
+              <div className={clsx(styles.textBlue, styles.textSmall)}>
                 Email Newsletter
               </div>
-              <h2 className="subscribe__title" id="subscribe-title">
+              <h2 className={styles.title} id="subscribe-title">
                 Subscribe for updates
               </h2>
             </div>
           </div>
-          <div className="subscribe__col">
-            <form
-              className="subscribe__form form-subscribe align-center"
-              action="#"
-              id="form"
-            >
-              <input
-                className="form-subscribe__form _req"
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Name"
-                autoComplete="given-name"
-              />
-              <input
-                className="form-subscribe__form _req _email"
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Email"
-                autoComplete="off"
-              />
-              <button
-                className="form-subscribe__button button-subscribe"
-                type="submit"
-                aria-label="Submit"
-              >
-                Submit
-              </button>
-            </form>
+
+          <div className={styles.col}>
+            <SubscribeForm />
           </div>
+          
         </div>
       </div>
     </section>
   );
-};
-
-export default Subscribe
+}

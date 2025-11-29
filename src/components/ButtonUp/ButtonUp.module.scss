@@ -1,0 +1,43 @@
+.buttonUp {
+  position: fixed;
+	bottom: to-rem(40);
+	right: to-rem(15);
+	width: fluid-full(60,40);
+	aspect-ratio: 1;
+	border-radius: 50%;
+	z-index: 100;
+	outline: 0 !important;
+	background: rgba(255, 255, 255, .5);
+
+	&::before, &::after {
+		content: "";
+		width: to-rem(10);
+		height: to-rem(10);
+		border-top: to-rem(2) solid #000;
+		border-right: to-rem(2) solid #000;
+		transform: rotate(-45deg);
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
+	&::before {top: to-rem(-5);}
+
+	&::after {top: to-rem(10);}
+	
+	&.active {display: block;}
+
+	@media(min-width: to-rem(992)) {
+		&:hover {
+			cursor: pointer;
+			background-color: var(--color-accent-blue);
+			transition: 0.5s;
+			&::before, &::after {
+				border-top: to-rem(2) solid var(--color-text-primary);
+				border-right: to-rem(2) solid var(--color-text-primary);
+			}
+		}
+	}
+}

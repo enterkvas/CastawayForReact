@@ -6,7 +6,7 @@ import styles from './Header.module.scss';
 export default function Header () {
   return (
     <header className={styles.header}>
-      <div className={clsx(styles.container, styles.alignCenter)}>
+      <div className={styles.header__container}>
         <Logo />
         <HeaderMenu />
       </div>

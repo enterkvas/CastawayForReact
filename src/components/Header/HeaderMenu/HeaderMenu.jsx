@@ -3,7 +3,7 @@ import styles from './HeaderMenu.module.scss'
 
 export default function HeaderMenu () {
   return (
-    <div className={styles.alignCenter}>
+    <div className={clsx(styles.menu, styles.alignCenter)}>
       <div className={styles.icon}>
         <span />
       </div>

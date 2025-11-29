@@ -5,9 +5,9 @@
 
 .visually-hidden {
 	position: absolute !important;
-	width: 1rem !important;
-	height: 1rem !important;
-	margin: -1rem !important;
+	width: to-rem(1) !important;
+	height: to-rem(1) !important;
+	margin: to-rem(-1) !important;
 	border: 0 !important;
 	padding: 0 !important;
 	white-space: nowrap !important;

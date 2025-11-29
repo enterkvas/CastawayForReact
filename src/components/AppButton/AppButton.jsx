@@ -1,16 +1,28 @@
-export default function AppButton ({
-  label = "View all episodes",
-  href = "#",
-  className = "episodes__header-link button text-small",
-  arialabel
-}) {
+import clsx from 'clsx';
+import styles from './AppButton.module.scss';
+
+export default function AppButton({ children, href, className = '', type = '', ...props }) { 
+  if(href) {
+    return (
+      <a
+        href={href}
+        className={clsx(
+          styles.button, 
+          styles.textSmall
+        )}
+        {...props}
+      >
+        {children}
+      </a>
+    );
+  }
   return (
-    <a 
-      href={href} 
-      arialabel = {arialabel || label}
-      className={`${className}`}
+    <button
+      type={type}
+      className={styles.buttonSubscribe}
+      {...props}
     >
-      {label}
-    </a>
+      {children}
+    </button>
   );
 }

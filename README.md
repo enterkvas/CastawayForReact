@@ -27,3 +27,5 @@ import styles from "./Episodes.module.scss"; ?
 Вставляю последний вариант 2 от гпт:
 Episodes.jsx: ?:id="episodes"
 EpisodesHeader.jsx: 1) id="episodes-title" 2) <AppButton />
+
+22.11.25 сб 	Subscribe: 1) Заменил класс form-subscribe__form на класс form-subscribe__field 2) в стилях много значений в px 3) subscribe__text переименовал в subscribe__body

@@ -1,9 +1,12 @@
-import Home from './pages/Home'
+import Home from './pages/Home';
+import ButtonUp from './components/ButtonUp/ButtonUp';
 
-const App = () => {
+export default function App () {
   return (
-    <Home />
-  )
-}
+    <div className="app">
+      <Home />
 
-export default App
+      <ButtonUp />    
+    </div>
+  );
+}

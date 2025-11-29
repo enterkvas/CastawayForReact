@@ -8,7 +8,6 @@ const Home = () => {
       <Header />
       <Main />
       <Footer />
-      <div className="btn_up"></div>
     </div>
   );
 };
