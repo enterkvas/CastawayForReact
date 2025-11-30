@@ -5,7 +5,7 @@ import EpisodesHeader from './EpisodesHeader';
 
 export default function Episodes() {
   return (
-    <section className={clsx(styles.root, styles.pageContainer)}>
+    <section id="episodes" className={clsx(styles.root, styles.container, styles.pageContainer)}>
       <EpisodesHeader />
       <EpisodesCardList />
     </section>

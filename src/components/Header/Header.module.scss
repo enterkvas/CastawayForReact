@@ -1,3 +1,8 @@
+.container {
+	max-width: to-rem(1440);
+	margin-inline: auto;
+}
+
 .header {
 	position: fixed;
 	top: 0;
@@ -9,16 +14,17 @@
 	padding-block: fluid-full(26,12);
 	background-color: var(--color-bg-primary);
 	@media (width: to-rem(768)) {padding-block: to-rem(16);}
+}
 
-	&__container {
-		display: flex;
-		justify-content: space-between;	
-		width: 100%;
-		max-width: to-rem(1440);
-		padding-inline: var(--pad-inl-head-foot);
-		@media (width: to-rem(768)) {padding-inline: to-rem(40);}
-	}
-}	
+.headerContainer {
+	display: flex;
+	justify-content: space-between;	
+	width: 100%;
+	max-width: to-rem(1440);
+	padding-inline: var(--pad-inl-head-foot);
+	@media (width: to-rem(768)) {padding-inline: to-rem(40);}
+}
+	
 
 .alignCenter {
 	display: flex;

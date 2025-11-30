@@ -1,21 +1,18 @@
-/* ROOT <li> */
 .item {list-style: none;}
 
-/* Clickable card */
 .card {
   display: block;
   text-decoration: none;
   color: inherit;
 }
 
-/* Inner border */
 .cardBorder {
   @media (min-width: to-rem(768)) {
     display: flex;
     column-gap: fluid-mid(53, 40);
     padding: fluid-mid(40, 20);
     background-color: var(--color-bg-cards);
-    border-radius: fluid-mid_1(32, 22);
+    border-radius: fluid-mid(32, 22);
     & > div:nth-child(1) {order: 2;}
     & > div:nth-child(2) {order: 1;}
   }
@@ -33,7 +30,6 @@
   }
 }
 
-/* TEXT BODY */
 .cardBody {
   position: absolute;
   z-index: 1;
@@ -76,7 +72,6 @@
   }
 }
 
-/* EPISODE NUMBER */
 .cardBlue {
   height: to-rem(24);
   margin-inline: auto;
@@ -112,7 +107,6 @@
 	filter: saturate(200%);
 }
 
-/* HEADER INSIDE CARD */
 .header {
   margin-bottom: fluid-mobile(220, 69);
   @media (min-width: to-rem(768)) {
@@ -121,7 +115,6 @@
   }
 }
 
-/* TITLE */
 .cardTitle {
   padding-inline: fluid-mobile(80, 6);
   margin-bottom: fluid-mobile(80, 28);

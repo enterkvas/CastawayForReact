@@ -1,12 +1,14 @@
-import hero from '../../assets/images/hero-img/hero.jpg'
-import Soc1alsIcons1 from '../Soc1alsIcons1/Soc1alsIcons1'
+import clsx from 'clsx';
+import hero from '@/assets/images/hero-img/hero.jpg';
+import Soc1alsIcons1 from '../Soc1alsIcons1/Soc1alsIcons1';
+import styles from './Hero.module.scss';
 
-const Hero = () => {
+export default function Hero() {
   return (
-    <section className="page__hero hero" aria-labelledby="hero-title">
-      <div className="hero__row">
-        <div className="hero__col">
-          <div className="hero__image">
+    <section className={clsx(styles.hero, styles.container, styles.pageContainer)} aria-labelledby="hero-title">
+      <div className={styles.row}>
+        <div className={styles.col}>
+          <div className={styles.image}>
             <img
               src={hero}
               width="650"
@@ -15,20 +17,18 @@ const Hero = () => {
             />
           </div>
         </div>
-        <div className="hero__col align-center">
-          <div className="hero__body">
-            <h2 className="hero__text-main">
+        <div className={clsx(styles.col, styles.alignCenter)}>
+          <div className={styles.body}>
+            <h2 className={styles.textMain}>
               Take your podcast to the{" "}
-              <span className="hero__text-underlining">next</span>{" "}
-              <span className="hero__text-green">level</span>
+              <span className={styles.textUnderlining}>next</span>{" "}
+              <span className={styles.textGreen}>level</span>
             </h2>
-            <p className="hero__text-add">Listen on</p>
+            <p className={styles.textAdd}>Listen on</p>
             <Soc1alsIcons1 />
           </div>
         </div>
       </div>
     </section>
   );
-};
-
-export default Hero
+}

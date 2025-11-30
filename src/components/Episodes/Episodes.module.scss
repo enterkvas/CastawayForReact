@@ -1,10 +1,13 @@
-/* The Container for the all main block */
+.container {
+	max-width: to-rem(1440);
+	margin-inline: auto;
+}
+
 .pageContainer {
 	@media (min-width: to-rem(320)) {padding-inline: 0;}
 	@media (min-width: to-rem(768)) {padding-inline: var(--pad-inl-page);}
 }	
 
-/* ROOT SECTION */
 .root {
   padding-block: var(--pad-bl-main);
   text-align: center;
@@ -42,20 +45,6 @@
     row-gap: fluid-mid(60, 20);
   }
 }
-
-// .button {
-// 	display: inline-block;
-// 	padding-block: fluid-full(12,5);
-// 	padding-inline: fluid-full(18,8);
-// 	font-weight: 400;
-// 	color: var(--color-text-primary);
-// 	background-color: var(--color-accent-blue);
-// 	@media (min-width: to-rem(768)) {padding-block: to-rem(8);}
-// 	@media (min-width: to-rem(992)) {
-// 		&:hover {background-image: linear-gradient(to right, var(--color-accent-yellow), var(--color-accent-blue));}		
-// 	}
-// 	@media (min-width: to-rem(1440)) {line-height: to-rem(27);}
-// }
 
 .textSmall {
 	font-size: to-rem(15);

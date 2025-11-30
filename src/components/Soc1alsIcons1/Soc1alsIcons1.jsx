@@ -1,10 +1,12 @@
+import styles from './Soc1alsIcons1.module.scss';
+
 const Soc1alsIcons1 = () => {
   return (
-    <div className="hero__soc1als soc1als-1">
-      <ul className="soc1als-1__list">
-        <li className="soc1als-1__item">
+    <div className={styles.soc1als1}>
+      <ul className={styles.list}>
+        <li className={styles.item}>
           <a
-            className="soc1als-1__link"
+            className={styles.link}
             href="/"
             target="_blank"
             aria-label="icon-1"
@@ -30,9 +32,9 @@ const Soc1alsIcons1 = () => {
             </svg>
           </a>
         </li>
-        <li className="soc1als-1__item">
+        <li className={styles.item}>
           <a
-            className="soc1als-1__link"
+            className={styles.link}
             href="/"
             target="_blank"
             aria-label="icon-2"
@@ -62,9 +64,9 @@ const Soc1alsIcons1 = () => {
             </svg>
           </a>
         </li>
-        <li className="soc1als-1__item">
+        <li className={styles.item}>
           <a
-            className="soc1als-1__link"
+            className={styles.link}
             href="/"
             target="_blank"
             aria-label="icon-3"
@@ -157,9 +159,9 @@ const Soc1alsIcons1 = () => {
             </svg>
           </a>
         </li>
-        <li className="soc1als-1__item">
+        <li className={styles.item}>
           <a
-            className="soc1als-1__link"
+            className={styles.link}
             href="/"
             target="_blank"
             aria-label="icon-4"
@@ -202,9 +204,9 @@ const Soc1alsIcons1 = () => {
             </svg>
           </a>
         </li>
-        <li className="soc1als-1__item">
+        <li className={styles.item}>
           <a
-            className="soc1als-1__link"
+            className={styles.link}
             href="/"
             target="_blank"
             aria-label="icon-5"
