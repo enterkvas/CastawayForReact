@@ -1,15 +1,17 @@
-import about from '@/assets/images/about/about.jpg'
+import clsx from 'clsx';
+import about from '@/assets/images/about/about.jpg';
+import styles from './About.module.scss';
 
-const About = () => {
+export default function About () {
   return (
     <section
-      className="page__about about"
+      className={clsx(styles.about, styles.container, styles.pageContainer)}
       id="about"
       aria-labelledby="about-title"
     >
-      <div className="about__row">
-        <div className="about__col">
-          <div className="about__image">
+      <div className={styles.row}>
+        <div className={styles.col}>
+          <div className={styles.image}>
             <img
               loading="lazy"
               src={about}
@@ -19,24 +21,24 @@ const About = () => {
             />
           </div>
         </div>
-        <div className="about__col">
-          <div className="about__text text-about">
-            <div className="text-about__container">
-              <div className="text-about__arrow" />
-              <div className="text-about__text-blue text-blue text-small">
+        <div className={styles.col}>
+          <div className={styles.body}>
+            <div className={styles.aboutContainer}>
+              <div className={styles.arrow} />
+              <div className={clsx(styles.aboutBlue, styles.textBlue, styles.textSmall)}>
                 Meet your host
               </div>
-              <header className="text-about__header">
-                <h2 className="text-about__title" id="about-title">
+              <header className={styles.header}>
+                <h2 className={styles.title} id="about-title">
                   Jacob Paulaner
                 </h2>
-                <div className="text-about__subtitle subtitle">
+                <div className={clsx(styles.aboutSubtitle, styles.subtitle)}>
                   <p>
                     Jacob has a background in audio engineering, and has been
                     podcasting since the early days.
                   </p>
                 </div>
-                <div className="text-about__subtitle subtitle">
+                <div className={clsx(styles.aboutSubtitle, styles.subtitle)}>
                   <p>
                     He’s here to help you level up your game by sharing
                     everything he’s learned along the way.
@@ -49,6 +51,4 @@ const About = () => {
       </div>
     </section>
   );
-};
-
-export default About;
+}
