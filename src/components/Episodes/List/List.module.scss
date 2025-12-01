@@ -1,0 +1,6 @@
+.list {
+  @media (min-width: to-rem(768)) {
+    display: grid;
+    row-gap: fluid-mid(60, 20);
+  }
+}

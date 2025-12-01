@@ -1,8 +1,8 @@
 import clsx from 'clsx';
-import styles from './EpisodesCard.module.scss';
-import EpisodesCardHeader from './EpisodesCardHeader';
+import styles from './Card.module.scss';
+import CardHeader from './CardHeader';
 
-export default function EpisodesCardBody({ category, number, title, text }) {
+export default function CardBody({ category, number, title, text }) {
   return (
     <div className={styles.cardBody}>
       <div className={styles.cardContainer}>
@@ -12,7 +12,7 @@ export default function EpisodesCardBody({ category, number, title, text }) {
           Episode <span>{number}</span>
         </p>
 
-        <EpisodesCardHeader title={title} text={text} />
+        <CardHeader title={title} text={text} />
 
         <span className={clsx(styles.cta, styles.textSmall)}>View Episode Details</span>
       </div>

@@ -1,6 +1,6 @@
-import styles from './SubscribeField.module.scss';
+import styles from './Field.module.scss';
 
-export default function SubscribeField({ register, placeholder, error }) {
+export default function Field({ register, placeholder, error }) {
   return (
     <div className={styles.fieldWrapper}>
       <input

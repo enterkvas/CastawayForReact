@@ -1,0 +1,13 @@
+.stars {
+	display: flex;
+	column-gap: fluid-full(5,1);
+	@media (min-width: to-rem(768)) {column-gap: to-rem(2);}
+}
+
+.star {
+	width: fluid-full(17,7);
+	height: fluid-full(17,7);
+	fill: var(--color-text-muted);   /* empty by default */
+}
+
+.starFull {fill: var(--color-accent-yellow); /* filled */}

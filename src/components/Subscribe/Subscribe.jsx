@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import styles from './Subscribe.module.scss';
-import SubscribeForm from './components/SubscribeForm';
+import SubscribeForm from './components/Form';
 
 export default function Subscribe() {
   return (

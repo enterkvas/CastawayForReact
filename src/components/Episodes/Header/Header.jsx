@@ -1,7 +1,7 @@
-import styles from './Episodes.module.scss';
-import AppButton from '../AppButton/AppButton';
+import styles from './Header.module.scss';
+import AppButton from '../../AppButton/AppButton';
 
-export default function EpisodesHeader() {
+export default function Header() {
   return (
     <header className={styles.header}>
       <h2 className={styles.headerTitle}>Latest episodes</h2>

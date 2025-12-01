@@ -1,7 +1,7 @@
 import clsx from 'clsx';
-import styles from './HeaderMenu.module.scss'
+import styles from './Menu.module.scss'
 
-export default function HeaderMenu () {
+export default function Menu () {
   return (
     <div className={clsx(styles.menu, styles.alignCenter)}>
       <div className={styles.icon}>

@@ -2,8 +2,8 @@ import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 import clsx from 'clsx';
-import SubscribeField from './SubscribeField';
-import styles from './SubscribeForm.module.scss';
+import Field from './Field';
+import styles from './Form.module.scss';
 import AppButton from '../../AppButton/AppButton';
 
 const schema = z.object({
@@ -15,7 +15,7 @@ const schema = z.object({
     .email('Invalid email format'),
 });
 
-export default function SubscribeForm() {
+export default function Form() {
   const {
     register,
     handleSubmit,
@@ -31,23 +31,18 @@ export default function SubscribeForm() {
   return (
     <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
       
-      <SubscribeField
+      <Field
         register={register('name')}
         placeholder="Name"
         error={errors.name}
       />
 
-      <SubscribeField
+      <Field
         register={register('email')}
         placeholder="Email"
         error={errors.email}
       />
 
-      {/* <button className={styles.button} type="submit">
-        Submit
-      </button> */}
-
-			{/*<AppButton />*/}
       <AppButton type='submit'>Submit</AppButton>
 
     </form>

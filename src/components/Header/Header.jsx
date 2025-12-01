@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import Logo from './Logo/Logo';
-import HeaderMenu from './HeaderMenu/HeaderMenu';
+import Menu from './Menu/Menu';
 import styles from './Header.module.scss';
 
 export default function Header () {
@@ -8,7 +8,7 @@ export default function Header () {
     <header className={styles.header}>
       <div className={clsx(styles.headerContainer, styles.container, styles.alignCenter)}>
         <Logo />
-        <HeaderMenu />
+        <Menu />
       </div>
     </header>
   );

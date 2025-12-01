@@ -29,3 +29,13 @@ Episodes.jsx: ?:id="episodes"
 EpisodesHeader.jsx: 1) id="episodes-title" 2) <AppButton />
 
 22.11.25 сб 	Subscribe: 1) Заменил класс form-subscribe__form на класс form-subscribe__field 2) в стилях много значений в px 3) subscribe__text переименовал в subscribe__body
+
+01.12.25 пнд 	Компонент Reviews. Разобраться с куском непонятного кода в начале компонента: 
+                {/* <svg style={{ display: "none" }}>
+                  <symbol id="icon-star" viewBox="0 0 24 24">
+                    <path
+                      d="M12 .587l3.668 7.431L24 9.75l-6 5.847L19.335 24 
+													12 19.897 4.665 24 6 15.597 0 9.75l8.332-1.732z"
+                    />
+                  </symbol>
+                </svg> */}

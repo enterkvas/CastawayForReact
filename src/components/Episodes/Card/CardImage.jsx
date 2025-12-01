@@ -1,6 +1,6 @@
-import styles from './EpisodesCard.module.scss';
+import styles from './Card.module.scss';
 
-export default function EpisodesCardImage({ image, title }) {
+export default function CardImage({ image, title }) {
   return (
       <div className={styles.image}>
         <img
