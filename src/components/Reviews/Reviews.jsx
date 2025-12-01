@@ -1,19 +1,22 @@
-const Reviews = () => {
+import clsx from 'clsx';
+import styles from './Reviews.module.scss';
+
+export default function Reviews () {
   return (
     <section
-      className="page__reviews reviews"
+      className={clsx(styles.reviews, styles.container, styles.pageContainer)}
       id="reviews"
       aria-labelledby="reviews-title"
     >
-      <h2 className="visually-hidden" id="reviews-title">
+      <h2 className={styles.visuallyHidden} id="reviews-title">
         Student reviews
       </h2>
-      <div className="reviews__container container">
-        <ul className="reviews__list">
-          <li className="reviews__item">
+      <div className={styles.reviewsContainer}>
+        <ul className={styles.list}>
+          <li className={styles.item}>
             <a href="#">
-              <article className="reviews-card">
-                <h3 className="visually-hidden">Review by Betty Lacey</h3>
+              <article className={styles.card}>
+                <h3 className={styles.visuallyHidden}>Review by Betty Lacey</h3>
                 <svg style={{ display: "none" }}>
                   <symbol id="icon-star" viewBox="0 0 24 24">
                     <path
@@ -22,169 +25,169 @@ const Reviews = () => {
                     />
                   </symbol>
                 </svg>
-                <div className="stars">
-                  <svg className="star empty">
+                <div className={styles.stars}>
+                  <svg className={styles.star}>
                     <use href="#icon-star" />
                   </svg>
-                  <svg className="star empty">
+                  <svg className={styles.star}>
                     <use href="#icon-star" />
                   </svg>
-                  <svg className="star empty">
+                  <svg className={styles.star}>
                     <use href="#icon-star" />
                   </svg>
-                  <svg className="star empty">
+                  <svg className={styles.star}>
                     <use href="#icon-star" />
                   </svg>
-                  <svg className="star empty">
+                  <svg className={styles.star}>
                     <use href="#icon-star" />
                   </svg>
                 </div>
-                <blockquote className="reviews-card__description">
+                <blockquote className={styles.description}>
                   <p>I can’t recommend this podcast enough</p>
                 </blockquote>
-                <footer className="reviews-card__author">Betty Lacey</footer>
+                <footer className={styles.author}>Betty Lacey</footer>
               </article>
             </a>
           </li>
-          <li className="reviews__item">
+          <li className={styles.item}>
             <a href="#">
-              <article className="reviews-card">
-                <h3 className="visually-hidden">Review by Betty Adam Driver</h3>
-                <div className="stars">
-                  <svg className="star full">
+              <article className={styles.card}>
+                <h3 className={styles.visuallyHidden}>Review by Betty Adam Driver</h3>
+                <div className={styles.stars}>
+                  <svg className={clsx(styles.star, styles.starFull)}>
                     <use href="#icon-star" />
                   </svg>
-                  <svg className="star full">
+                  <svg className={clsx(styles.star, styles.starFull)}>
                     <use href="#icon-star" />
                   </svg>
-                  <svg className="star full">
+                  <svg className={clsx(styles.star, styles.starFull)}>
                     <use href="#icon-star" />
                   </svg>
-                  <svg className="star full">
+                  <svg className={clsx(styles.star, styles.starFull)}>
                     <use href="#icon-star" />
                   </svg>
-                  <svg className="star full">
+                  <svg className={clsx(styles.star, styles.starFull)}>
                     <use href="#icon-star" />
                   </svg>
                 </div>
-                <blockquote className="reviews-card__description">
+                <blockquote className={styles.description}>
                   <p>Jacob is the best in the business</p>
                 </blockquote>
-                <footer className="reviews-card__author">Adam Driver</footer>
+                <footer className={styles.author}>Adam Driver</footer>
               </article>
             </a>
           </li>
-          <li className="reviews__item">
+          <li className={styles.item}>
             <a href="#">
-              <article className="reviews-card">
-                <h3 className="visually-hidden">Review by Marcus Brown</h3>
-                <div className="stars">
-                  <svg className="star full">
+              <article className={styles.card}>
+                <h3 className={styles.visuallyHidden}>Review by Marcus Brown</h3>
+                <div className={styles.stars}>
+                  <svg className={clsx(styles.star, styles.starFull)}>
                     <use href="#icon-star" />
                   </svg>
-                  <svg className="star full">
+                  <svg className={clsx(styles.star, styles.starFull)}>
                     <use href="#icon-star" />
                   </svg>
-                  <svg className="star full">
+                  <svg className={clsx(styles.star, styles.starFull)}>
                     <use href="#icon-star" />
                   </svg>
-                  <svg className="star full">
+                  <svg className={clsx(styles.star, styles.starFull)}>
                     <use href="#icon-star" />
                   </svg>
-                  <svg className="star empty">
+                  <svg className={styles.star}>
                     <use href="#icon-star" />
                   </svg>
                 </div>
-                <blockquote className="reviews-card__description">
+                <blockquote className={styles.description}>
                   <p>A wealth of audio knowledge</p>
                 </blockquote>
-                <footer className="reviews-card__author">Marcus Brown</footer>
+                <footer className={styles.author}>Marcus Brown</footer>
               </article>
             </a>
           </li>
-          <li className="reviews__item">
+          <li className={styles.item}>
             <a href="#">
-              <article className="reviews-card">
-                <h3 className="visually-hidden">Review by Jessica Knowl</h3>
-                <div className="stars">
-                  <svg className="star full">
+              <article className={styles.card}>
+                <h3 className={styles.visuallyHidden}>Review by Jessica Knowl</h3>
+                <div className={styles.stars}>
+                  <svg className={clsx(styles.star, styles.starFull)}>
                     <use href="#icon-star" />
                   </svg>
-                  <svg className="star full">
+                  <svg className={clsx(styles.star, styles.starFull)}>
                     <use href="#icon-star" />
                   </svg>
-                  <svg className="star full">
+                  <svg className={clsx(styles.star, styles.starFull)}>
                     <use href="#icon-star" />
                   </svg>
-                  <svg className="star full">
+                  <svg className={clsx(styles.star, styles.starFull)}>
                     <use href="#icon-star" />
                   </svg>
-                  <svg className="star full">
+                  <svg className={clsx(styles.star, styles.starFull)}>
                     <use href="#icon-star" />
                   </svg>
                 </div>
-                <blockquote className="reviews-card__description">
+                <blockquote className={styles.description}>
                   <p>Every episode is a gem!</p>
                 </blockquote>
-                <footer className="reviews-card__author">Jessica Knowl</footer>
+                <footer className={styles.author}>Jessica Knowl</footer>
               </article>
             </a>
           </li>
-          <li className="reviews__item">
+          <li className={styles.item}>
             <a href="#">
-              <article className="reviews-card">
-                <h3 className="visually-hidden">Review by Scott Adams</h3>
-                <div className="stars">
-                  <svg className="star full">
+              <article className={styles.card}>
+                <h3 className={styles.visuallyHidden}>Review by Scott Adams</h3>
+                <div className={styles.stars}>
+                  <svg className={clsx(styles.star, styles.starFull)}>
                     <use href="#icon-star" />
                   </svg>
-                  <svg className="star empty">
+                  <svg className={styles.star}>
                     <use href="#icon-star" />
                   </svg>
-                  <svg className="star empty">
+                  <svg className={styles.star}>
                     <use href="#icon-star" />
                   </svg>
-                  <svg className="star empty">
+                  <svg className={styles.star}>
                     <use href="#icon-star" />
                   </svg>
-                  <svg className="star empty">
+                  <svg className={styles.star}>
                     <use href="#icon-star" />
                   </svg>
                 </div>
-                <blockquote className="reviews-card__description">
+                <blockquote className={styles.description}>
                   <p>Whoa whoa, let me take some notes!</p>
                 </blockquote>
-                <footer className="reviews-card__author">Scott Adams</footer>
+                <footer className={styles.author}>Scott Adams</footer>
               </article>
             </a>
           </li>
-          <li className="reviews__item">
+          <li className={styles.item}>
             <a href="#">
-              <article className="reviews-card">
-                <h3 className="visually-hidden">Review by Steven Blast</h3>
-                <div className="stars">
-                  <svg className="star full">
+              <article className={styles.card}>
+                <h3 className={styles.visuallyHidden}>Review by Steven Blast</h3>
+                <div className={styles.stars}>
+                  <svg className={clsx(styles.star, styles.starFull)}>
                     <use href="#icon-star" />
                   </svg>
-                  <svg className="star full">
+                  <svg className={clsx(styles.star, styles.starFull)}>
                     <use href="#icon-star" />
                   </svg>
-                  <svg className="star full">
+                  <svg className={clsx(styles.star, styles.starFull)}>
                     <use href="#icon-star" />
                   </svg>
-                  <svg className="star full">
+                  <svg className={clsx(styles.star, styles.starFull)}>
                     <use href="#icon-star" />
                   </svg>
-                  <svg className="star full">
+                  <svg className={clsx(styles.star, styles.starFull)}>
                     <use href="#icon-star" />
                   </svg>
                 </div>
-                <blockquote className="reviews-card__description">
+                <blockquote className={styles.description}>
                   <p>
                     I’ve upped my game considerably since I started listening
                   </p>
                 </blockquote>
-                <footer className="reviews-card__author">Steven Blast</footer>
+                <footer className={styles.author}>Steven Blast</footer>
               </article>
             </a>
           </li>
@@ -192,6 +195,4 @@ const Reviews = () => {
       </div>
     </section>
   );
-};
-
-export default Reviews
+}
