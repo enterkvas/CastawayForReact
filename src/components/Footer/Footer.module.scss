@@ -1,0 +1,107 @@
+.container {
+	max-width: to-rem(1440);
+	margin-inline: auto;
+}
+
+.footer {
+  position: relative;
+  padding-top: fluid-full(100, 20);
+  padding-bottom: fluid-full(100, 40);
+}
+
+.footerContainer {padding-inline: var(--pad-inl-head-foot);}
+
+.row {
+  display: grid;
+  row-gap: fluid-mobile-add(40, 20);
+  @media (min-width: to-rem(768)) {row-gap: to-rem(32);}
+  @media (min-width: to-rem(992)) {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  column-gap: fluid-mobile-add(285, 28);
+  @media (min-width: to-rem(992)) {display: block;}
+}
+
+.logo {
+  display: inline-block;  
+  @media (min-width: to-rem(992)) {margin-bottom: to-rem(20);}
+}
+
+.logo-img {
+	width: fluid-full(223, 112);
+	height: auto;
+	@media (min-width: to-rem(768)) {width: to-rem(160);}
+}
+
+.footerSoc1als2 {
+  display: flex;
+  column-gap: fluid-mobile-add(50, 30);
+  font-size: 0;
+  @media (min-width: to-rem(992)) {column-gap: fluid-mid_2(17, 10);}
+}
+
+.nav {}
+
+.navRow {
+  display: flex;
+  column-gap: fluid-mobile-add(406, 80);
+  @media (min-width: to-rem(992)) {column-gap: fluid-mid_2(124, 112);}
+}
+
+.navCol {}
+
+.item {}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  display: inline-flex;
+  padding-block: fluid-mobile(10, 8);
+  font-size: fluid-full(17, 15);
+  line-height: fluid-full(27, 24);
+  color: var(--color-text-primary);
+  @media (min-width: to-rem(768)) {
+    font-size: to-rem(16);
+    line-height: to-rem(25);
+  }
+  @media (min-width: to-rem(768)) {
+    padding-block: to-rem(6);
+    &:hover,
+    &:active {
+      color: var(--color-accent-blue);
+    }
+    @media (min-width: to-rem(992)) {
+      padding-block: 0;
+      padding-bottom: to-rem(8);
+    }
+    @media (min-width: to-rem(1440)) {padding-bottom: to-rem(10);}
+  }
+}
+
+.soc1als2 {margin-top: to-rem(20);}
+
+.soc1als2List {
+	display: flex;
+	column-gap: to-rem(15);
+	@media (min-width: to-rem(768)) {column-gap: to-rem(17);}
+}
+
+.soc1als2Item{}
+
+.soc1als2Link {
+	display: inline-flex;
+	width: var(--icon-soc1als-2-width);
+	font-size: 0;
+	@media (width: to-rem(768)) {width: to-rem(19);}
+}

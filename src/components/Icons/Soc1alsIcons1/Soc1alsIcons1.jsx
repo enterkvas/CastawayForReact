@@ -1,6 +1,6 @@
 import styles from './Soc1alsIcons1.module.scss';
 
-const Soc1alsIcons1 = () => {
+export default function Soc1alsIcons1 () {
   return (
     <div className={styles.soc1als1}>
       <ul className={styles.list}>
@@ -298,6 +298,4 @@ const Soc1alsIcons1 = () => {
       </ul>
     </div>
   );
-};
-
-export default Soc1alsIcons1
+}

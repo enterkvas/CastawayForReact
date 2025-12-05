@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import hero from '@/assets/images/hero-img/hero.jpg';
-import Soc1alsIcons1 from '../Soc1alsIcons1/Soc1alsIcons1';
+import Soc1alsIcons1 from '../Icons/Soc1alsIcons1/Soc1alsIcons1';
 import styles from './Hero.module.scss';
 
 export default function Hero() {

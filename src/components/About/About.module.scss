@@ -33,9 +33,9 @@
 	filter: brightness(0.7);
 	@media (min-width: to-rem(768)) {filter: brightness(1.0);}			
 	img {
-		@media (min-width: to-rem(768)) {border-radius: to-rem(8);}
-		@media (min-width: to-rem(992)) {border-radius: to-rem(10);}
-		@media (min-width: to-rem(1440)) {border-radius: to-rem(14);}			
+		max-width: 100%; 
+		height: auto;
+		@media (min-width: to-rem(768)) {border-radius: fluid-mid(32,22);}
 	}
 }
 

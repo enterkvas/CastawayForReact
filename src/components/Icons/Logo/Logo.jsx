@@ -1,4 +1,4 @@
-import logo from '@/assets/images/header/logo.png';
+import logo from '@/assets/icons/logo.svg';
 import styles from './Logo.module.scss'
 
 export default function Logo () {

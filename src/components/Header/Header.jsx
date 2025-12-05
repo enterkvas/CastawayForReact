@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import Logo from './Logo/Logo';
+import Logo from '../Icons/Logo/Logo';
 import Menu from './Menu/Menu';
 import styles from './Header.module.scss';
 
