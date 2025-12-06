@@ -1,7 +1,6 @@
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
-import clsx from 'clsx';
 import Field from './Field';
 import styles from './Form.module.scss';
 import AppButton from '../../AppButton/AppButton';

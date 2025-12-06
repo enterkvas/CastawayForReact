@@ -1,0 +1,21 @@
+.item {}
+
+.link {
+	display: inline-block;
+	width: var(--icon-soc1als-1-width);
+	@media (width: to-rem(768)) {width: to-rem(26);}
+}
+
+.iconWrapper {
+  display: inline-flex;
+  transition: transform 0.25s ease, filter 0.25s ease;
+
+  &:hover {
+    transform: scale(1.07);
+    filter: brightness(1.25);
+  }
+}
+
+:global(.dark) .iconWrapper svg {
+  filter: brightness(0.85);
+}

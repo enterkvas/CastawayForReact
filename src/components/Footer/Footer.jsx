@@ -1,8 +1,8 @@
 import clsx from 'clsx';
 import Logo from '../Icons/Logo/Logo';
-import Soc1alsIcons1 from '../Icons/Soc1alsIcons1/Soc1alsIcons1'
-import logo from '@/assets/icons/logo.svg';
+import Soc1alsIcons1 from '../Icons/PodcastPlatformIcon'
 import styles from './Footer.module.scss';
+import PodcastPlatformIcons from '../PodcastPlatformIcons/PodcastPlatformIcons';
 
 export default function Footer () {
   return (
@@ -170,7 +170,7 @@ export default function Footer () {
             </div>
           </div>
           <div className={styles.col}>
-            <Soc1alsIcons1 />
+            <PodcastPlatformIcons />
           </div>
         </div>
       </div>

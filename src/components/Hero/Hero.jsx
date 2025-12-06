@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import hero from '@/assets/images/hero-img/hero.jpg';
-import Soc1alsIcons1 from '../Icons/Soc1alsIcons1/Soc1alsIcons1';
+import PodcastPlatformIcons from '../PodcastPlatformIcons/PodcastPlatformIcons';
 import styles from './Hero.module.scss';
 
 export default function Hero() {
@@ -25,7 +25,7 @@ export default function Hero() {
               <span className={styles.textGreen}>level</span>
             </h2>
             <p className={styles.textAdd}>Listen on</p>
-            <Soc1alsIcons1 />
+            <PodcastPlatformIcons />
           </div>
         </div>
       </div>

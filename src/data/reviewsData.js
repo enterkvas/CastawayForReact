@@ -1,5 +1,3 @@
-// src/data/reviewsData.js
-
 export const reviewsData = [
   {
     id: 1,
